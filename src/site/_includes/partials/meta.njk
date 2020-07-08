@@ -1,0 +1,23 @@
+{% set pageTitle = title %}
+{% if title != site.name %}
+  {% set pageTitle = title + ': ' + site.name %}
+{% endif %}
+{% set currentUrl = site.url + page.url %}
+
+{% set metaDesc = site.shortDesc %}
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ pageTitle }}</title>
+<meta name="generator" content="11ty 0.10.0">
+{% if site.url !== '/' %}
+  <link rel="canonical" href="{{ currentUrl }}"/>
+{% endif %}
+
+<meta name="twitter:creator" content="@marcoswebdev_"/>
+<meta name="twitter:card" content="summary">
+
+{% if metaDesc %}
+  <meta name="description" content="{{ metaDesc }}"/>
+  <meta name="twitter:description" content="{{ metaDesc }}"/>
+{% endif %}

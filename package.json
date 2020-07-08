@@ -1,10 +1,13 @@
 {
   "name": "blog",
   "version": "1.0.0",
-  "description": "Personal blog and porfolio",
+  "description": "Personal web development laboratory",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "rm -rf dist",
+    "eleventy": "eleventy --quiet",
+    "eleventy:watch": "eleventy --watch --quiet",
+    "test": "wtr src/**/test/**/*.test.js --node-resolve"
   },
   "repository": {
     "type": "git",
@@ -18,6 +21,11 @@
   },
   "homepage": "https://github.com/marcoswebdev/blog#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^0.11.0"
+    "@11ty/eleventy": "^0.11.0",
+    "@open-wc/testing": "^2.5.19",
+    "@web/test-runner": "^0.6.3"
+  },
+  "dependencies": {
+    "lit-element": "^2.3.1"
   }
 }
