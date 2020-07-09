@@ -16,7 +16,6 @@ switch (process.env.CONTEXT) {
 
 module.exports = {
   name: 'Marcos Gil - web developer',
-  shortDesc:
-    'Personal web development laboratory',
+  shortDesc: 'Personal web development laboratory',
   url,
 };
