@@ -9,12 +9,12 @@
  * @see {@link https://www.11ty.dev/docs/languages/javascript/#optional-data-method Optional `data` in JavaScript templates in 11ty}
  */
 exports.data = {
-  title: 'Welcome to 🍦.11ty.js',
-  date: '2020-04-10',
+  title: 'Welcome to marcosweb.dev',
+  date: '2020-08-01',
   permalink: '/blog/welcome/',
   templateEngineOverride: '11ty.js,md',
   description:
-    'Not only is this first blog post meant to be inviting and informative, you can get a taste of how quirky Reuben’s writing gets when he tries to be playful with his prose.',
+    'Welcome to marcosweb.dev first blog post, it is not easy to start but a man got to do it :)',
 };
 
 /**
@@ -24,22 +24,17 @@ exports.data = {
  * @param {Object} data 11ty’s data object
  * @return {String} The rendered template
  */
-exports.render = data =>
-  `This blog isn’t just some nonsensical chunk of sample content—it occassionally rises to the level of being helpful (well, … hopefully).
+exports.render = () => `## Do your thing
 
-The posts in this sample blog are meant to guide you through how to install 🍦.11ty.js and spin up your own site with this starter project. You don’t need web development experience to follow along. All you need is a willingness to learn! You can work at your own pace and skip around if you like.
+It is not easy to start new projects and to go out of your comfort zone, everybody knows that. The point is that if you want to learn new things and keep growing you got to do it. **You must do it!**
 
-> <p><strong>😰 Stuck?</strong></p>
-> <p>Try <a href="${data.pkg.bugs.url}">submitting an issue on GitLab</a> where friendly folks can try to help.</p>
+I have found a very good strategy that consists of starting small and doing little steps in the right direction or at least in some direction.
 
-### Why 🍦?
+An important question at this point is to define which is the right direction... After reading a lot of articles and seeing a lot of videos I saw that everything start with a good **why**. Thinking about your goals and why you want that goal helps to define the correct starting point and direction.
 
-You mean besides the opportunity to overuse the vanilla icecream emoji?
+So this is it!
 
-🍦.11ty.js is designed for [a myriad of reasons outlined on the About page](/about/), but one in particular bears repeating here:
-
-_We need to lower the barrier to entry for web development._
-
-The [Web is for everyone](https://www.w3.org/Consortium/mission)—it’s literally the mission statement of the World Wide Web Consortium (W3C), the international standards organization for the Internet. As liberating is this ideal truly is, the inherently open canvas of the Web can leave newcomers and not-so-techinically-inclined folks feeling lost and deserted 🏝️. Not all content is actually beneficial or trustworthy. And learning is hard enough when you have a clear set of directions to follow.
-
-This project is designed to give you a solid foundation from which to build a fast, accessible, lightweight, secure, user-friendly, developer-friendly site. As far as possible, 🍦.11ty.js aspires to follow current standards and best practices.`;
+- I want to experiment with new things and ideas.
+- I want to improve my developer knowledge
+- I want to share and help others
+- I want to raise my voice`;
