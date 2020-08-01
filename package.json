@@ -13,16 +13,19 @@
     "lint": "run-p lint:*",
     "lint:eclint": "git ls-files | xargs eclint check",
     "lint:eslint": "eslint --ext .js,.html . --ignore-path .gitignore",
-    "lint:markdownlint": "git ls-files '*.md' | xargs markdownlint --ignore '**/CHANGELOG.md'",
+    "lint:markdownlint": "git ls-files '*.md' | xargs markdownlint --ignore './CHANGELOG.md'",
     "lint:prettier": "prettier \"**/*.js\" --list-different || (echo '↑↑ these files are not prettier formatted ↑↑' && exit 1)",
     "format": "npm run format:eslint && npm run format:prettier",
     "format:eslint": "eslint --ext .js,.html . --fix --ignore-path .gitignore",
     "format:prettier": "prettier \"**/**/*.{js,mdx,md}\" --write",
+    "release": "standard-version",
     "test": "wtr src/**/test/**/*.test.js --node-resolve"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/marcoswebdev/blog.git"
+    "url": "git+https://github.com/marcoswebdev/blog.git",
+    "https": "https://github.com/marcoswebdev/blog.git",
+    "editUrl": "https://github.com/marcoswebdev/blog/-/edit/master"
   },
   "keywords": [
     "11ty",
@@ -41,7 +44,7 @@
     "@commitlint/config-conventional": "^9.1.1",
     "@open-wc/eslint-config": "^2.0.6",
     "@open-wc/testing": "^2.5.19",
-    "@web/test-runner": "^0.6.46",
+    "@web/test-runner": "^0.6.53",
     "clean-css": "^4.2.3",
     "eclint": "^2.8.1",
     "eslint-config-prettier": "^6.11.0",
@@ -50,8 +53,9 @@
     "lint-staged": "^10.2.11",
     "markdownlint-cli": "^0.23.2",
     "npm-run-all": "^4.1.5",
-    "terser": "^4.8.0",
-    "prettier": "^2.0.5"
+    "prettier": "^2.0.5",
+    "standard-version": "^8.0.2",
+    "terser": "^5.0.0"
   },
   "dependencies": {
     "lit-element": "^2.3.1"

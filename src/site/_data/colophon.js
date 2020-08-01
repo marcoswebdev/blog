@@ -21,7 +21,7 @@ module.exports = {
       '🏗️ Created by <a href="https://twitter.com/marcoswebdev_">@marcoswebdev_</a> with the static site generator <a href="https://11ty.dev/">🕚  Eleventy</a>.',
     languages:
       'Source code written in 🍦 vanilla JavaScript, 🕸️ semantic HTML, 🎨 progressively enhanced CSS, and a 🧂 dash of Markdown.',
-    git: '💝 Contribute on <a href="http://gitlab.com/marcoswebdev/blog/">Github</a>.',
+    git: '💝 Contribute on <a href="http://github.com/marcoswebdev/blog/">Github</a>.',
     host: '🚀 Hosted on <a href="https://netlify.com/">Netlify</a>.',
   },
 };

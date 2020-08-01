@@ -62,7 +62,7 @@ module.exports = {
       // Heading for your most recent posts, used on home page
       headline: 'Latest posts',
       // Invite the user to visit your archive of posts, used on home page
-      prompt: '… peruse your blog archives 👀',
+      prompt: '… take a look to the blog archives 👀',
       // The landing page for your archive of posts
       url: '/blog/',
     },

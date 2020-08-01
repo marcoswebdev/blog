@@ -6,6 +6,6 @@ weight: 1
 permalink: '/'
 ---
 
-🏡 This is the home page.
+🏡 Welcome to my online home!
 
-You can add unique content here with Markdown (`./content/index.md`), or you can customize the chained homepage layout (`./_includes/layouts/home.11ty.js`).
+You can see that it is under construction at the moment, you can start with my first post or by contacting in Twitter, you have the link on top.
