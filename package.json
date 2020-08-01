@@ -4,7 +4,10 @@
   "description": "Personal web development laboratory",
   "main": "index.js",
   "scripts": {
-    "clean": "rm -rf dist",
+    "build": "ELEVENTY_ENV=production npx eleventy",
+    "clean": "rm -rf _site",
+    "debug": "DEBUG=* npx eleventy",
+    "dev": "ELEVENTY_ENV=development npx eleventy --serve",
     "eleventy": "eleventy --quiet",
     "eleventy:watch": "eleventy --watch --quiet",
     "lint": "run-p lint:*",
@@ -21,26 +24,33 @@
     "type": "git",
     "url": "git+https://github.com/marcoswebdev/blog.git"
   },
-  "keywords": [],
+  "keywords": [
+    "11ty",
+    "markdown",
+    "webcomponents"
+  ],
   "author": "Marcos Gil <marcosweb.dev>",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/marcoswebdev/blog/issues"
   },
   "homepage": "https://marcosweb.dev",
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0",
-    "@commitlint/cli": "^9.0.1",
-    "@commitlint/config-conventional": "^9.0.1",
+    "@commitlint/cli": "^9.1.1",
+    "@commitlint/config-conventional": "^9.1.1",
     "@open-wc/eslint-config": "^2.0.6",
     "@open-wc/testing": "^2.5.19",
-    "@web/test-runner": "^0.6.3",
+    "@web/test-runner": "^0.6.46",
+    "clean-css": "^4.2.3",
     "eclint": "^2.8.1",
     "eslint-config-prettier": "^6.11.0",
+    "html-minifier": "^4.0.0",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.11",
     "markdownlint-cli": "^0.23.2",
     "npm-run-all": "^4.1.5",
+    "terser": "^4.8.0",
     "prettier": "^2.0.5"
   },
   "dependencies": {
